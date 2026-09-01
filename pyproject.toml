@@ -1,0 +1,24 @@
+[project]
+name = "web-scraper-using-mcp"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Samrudhi", email = "samrudhi.chavan.2004@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "asyncio>=4.0.0",
+    "fastmcp>=3.4.7",
+    "groq>=1.6.0",
+    "httpx>=0.28.1",
+    "python-dotenv>=1.2.3",
+    "trafilatura>=2.2.0",
+]
+
+[project.scripts]
+web-scraper-using-mcp = "web_scraper_using_mcp:main"
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13.0"]
+build-backend = "uv_build"
